@@ -297,43 +297,23 @@ button:hover {
         font-size: 9px;
     }
 
-/* Creator photo */
 .creator-photo {
     width: 100%;
     max-width: 280px;
     height: 350px;
-    margin: 25px 0;
+    margin: 25px auto;
     padding: 5px;
     background: #10121f;
     border: 1px solid #00e1ff;
     border-top: 3px solid #ffe600;
-    box-shadow:
-        0 0 15px #00e1ff33,
-        6px 6px 0 #ff2b75;
-    clip-path: polygon(
-        0 0,
-        94% 0,
-        100% 6%,
-        100% 100%,
-        6% 100%,
-        0 94%
-    );
+    box-shadow: 0 0 15px #00e1ff33, 6px 6px 0 #ff2b75;
+    overflow: hidden;
 }
 
 .creator-photo img {
-    display: block;
     width: 100%;
-    height: auto;
-    object-fit: auto;
-    object-position: center;
-    border: 1px solid #525775;
-    transition: 0.3s;
+    height: 100%;
     display: block;
-    
+    object-fit: cover;
+    object-position: center;
 }
-
-.creator-photo img:hover {
-    filter: saturate(1.2);
-    box-shadow: 0 0 15px #00e1ff55;
-}
-    }
