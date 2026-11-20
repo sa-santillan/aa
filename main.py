@@ -11,12 +11,13 @@ ict_club_members = [
     "John Hizon",
     "Khabib Nurmagomedov"
 ]
-
+# Checks if the name inputted is in the ICT Club Members list
 def check_club_member(e):
     first_name = document.getElementById("first_name").value
     last_name = document.getElementById("last_name").value
-
-    club_member_name = first_name + " " + last_name
+# Removes spaces at the start and end of the text, and makes it so that it is not case-sensitive
+    club_member_name = f"{first_name.strip()} {last_name.strip()}".title()
+# Checks if the name is in the list
     is_member = club_member_name in ict_club_members
 
     # Different messages shown to the user depending on whether they are a member
@@ -28,7 +29,6 @@ def check_club_member(e):
     # Displays the Candidate Verification System
     document.getElementById("result").innerHTML = ""
     display(messages[is_member], target="result")
-
 
 # Skills Test (Element Checker)
 
@@ -52,17 +52,22 @@ nonmetals = {
     "Rn": ("Radon", 86, 222)
 }
 
-def search_element(event):
-    Nonmetal1 = document.getElementById("nonmetal1").value.strip()
+# Searches the dictionary for the entered element
+def search_element(e):
 
+    # Gets the input and corrects its capitalization
+    Nonmetal1 = document.getElementById("nonmetal1").value.strip().capitalize()
+
+    # Gets the element's properties or shows a fallback message
     result = nonmetals.get(Nonmetal1, ("Non-metal not found", "-", "-"))
 
+    # Displays the element's properties
     document.getElementById("symbol").innerText = Nonmetal1
     document.getElementById("name").innerText = result[0]
     document.getElementById("atomic_number").innerText = result[1]
     document.getElementById("atomic_mass").innerText = result[2]
 
-# DRILL 2 - SCHOOL CLUB MEMBERS
+# Drill 2 (ICT Club Members)
 
 # Sets for each grade
 grade_7 = {"Doctor Doom", "Iron Man"}
@@ -73,12 +78,13 @@ grade_10 = {"Logan Anaque", "Enzo Ruiz"}
 # Combines all grade sets
 all_members = grade_7 | grade_8 | grade_9 | grade_10
 
-# Displays all members and the total
+# Displays all members and the total amount
 def show_members():
     members_list = "<br>".join(sorted(all_members))
-    display(
-        f"ALL MEMBERS:<br>{members_list}<br>TOTAL MEMBERS: {len(all_members)}",
-        target="club_members_result"
+
+    # Displays the members and total inside the results box
+    document.getElementById("club_members_result").innerHTML = (
+        f"ALL MEMBERS:<br>{members_list}<br><br>TOTAL MEMBERS: {len(all_members)}"
     )
 
 # Adds a new club member
