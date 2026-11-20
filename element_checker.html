@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC // ELEMENT SCANNER</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="element_checker.html">ELEMENT SCANNER</a>
+        <a href="school_club_members.html">CLUB MEMBERS</a>
+        <a href="meet_the_creator.html">CREATOR</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <div class="top-label">NIGHT CITY // NET DATABASE</div>
+            <div class="status">● SYSTEM ONLINE</div>
+        </div>
+
+        <h1>NON-METAL<br>ELEMENT SCANNER</h1>
+
+        <p class="subtitle">IDENTIFICATION SYSTEM // NC-2077</p>
+
+        <div class="accent-line"></div>
+
+        <div class="section-label">01 // ELEMENT INPUT</div>
+
+        <input type="text" id="nonmetal1" placeholder="Enter a non-metal element symbol...">
+
+        <button py-click="search_element">INITIATE SCAN ↗</button>
+
+        <div class="results-heading">
+            <h2>SCAN RESULTS</h2>
+            <div class="result-tag">02 // DATA OUTPUT</div>
+        </div>
+
+        <div class="results">
+
+            <p>SYMBOL <span id="symbol">-</span></p>
+
+            <p>ELEMENT NAME <span id="name">-</span></p>
+
+            <p>ATOMIC NUMBER <span id="atomic_number">-</span></p>
+
+            <p>ATOMIC MASS <span id="atomic_mass">-</span></p>
+
+        </div>
+
+        <div class="footer">
+            <span>NIGHT CITY DATABASE</span>
+            <span>ACCESS GRANTED // 2077</span>
+        </div>
+
+    </div>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>

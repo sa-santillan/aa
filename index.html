@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC // ICT CLUB CHECKER</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="element_checker.html">ELEMENT SCANNER</a>
+        <a href="school_club_members.html">CLUB MEMBERS</a>
+        <a href="meet_the_creator.html">CREATOR</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <div class="top-label">NIGHT CITY // NET DATABASE</div>
+            <div class="status">● SYSTEM ONLINE</div>
+        </div>
+
+        <h1>ICT CLUB<br>CHECKER</h1>
+
+        <p class="subtitle">CANDIDATE VERIFICATION SYSTEM</p>
+
+        <div class="accent-line"></div>
+
+        <div class="section-label">01 // CANDIDATE INPUT</div>
+
+        <input type="text" id="first_name" placeholder="Enter first name...">
+
+        <input type="text" id="last_name" placeholder="Enter last name...">
+
+        <button py-click="check_club_member">INITIATE VERIFICATION ↗</button>
+
+        <div class="results-heading">
+            <h2>VERIFICATION RESULTS</h2>
+        </div>
+
+        <div id="result">
+            Enter your name to check if you are a part of the ICT Club.
+        </div>
+
+        <div class="footer">
+            <span>NIGHT CITY DATABASE</span>
+            <span>ACCESS GRANTED // 2077</span>
+        </div>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
