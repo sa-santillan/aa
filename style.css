@@ -323,11 +323,13 @@ button:hover {
 .creator-photo img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: auto;
     object-position: center;
     border: 1px solid #525775;
     transition: 0.3s;
+    display: block;
+    
 }
 
 .creator-photo img:hover {
