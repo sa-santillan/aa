@@ -299,7 +299,7 @@ button:hover {
 
     /* Creator photo */
 .creator-photo {
-    width: 100%;
+    width: 50%;
     max-width: 280px;
     margin: 25px 0;
     padding: 5px;
