@@ -296,24 +296,3 @@ button:hover {
     nav a {
         font-size: 9px;
     }
-
-.creator-photo {
-    width: 100%;
-    max-width: 280px;
-    height: 350px;
-    margin: 25px auto;
-    padding: 5px;
-    background: #10121f;
-    border: 1px solid #00e1ff;
-    border-top: 3px solid #ffe600;
-    box-shadow: 0 0 15px #00e1ff33, 6px 6px 0 #ff2b75;
-    overflow: hidden;
-}
-
-.creator-photo img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
